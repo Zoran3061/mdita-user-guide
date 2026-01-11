@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html long="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Mdita editor prirucnik</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>Mdita editor</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="logo1.jpg" alt="me" class="user-img" id="logo">
+            <div>
+                <p class="bold" id="univerzitet"> Univerzitet Metropolitan</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#" class="nav-link" data-content="Uputstvo za instalaciju aplikacije">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Uputstvo za instalaciju aplikacije</span>
+                </a>
+                <span class="tooltip">Uputstvo za instalaciju aplikacije</span>  
+            </li>
+            <li>
+                <a href="#" id="korisnicko-uputstvo" class="nav-link" data-content="Korisničko uputstvo">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Korisničko uputstvo</span>
+                </a>
+                <span class="tooltip">Korisničko uputstvo</span>  
+            </li>
+            <ul class="extra-links" id="additional-links">
+            <li>
+                <a href="#" class="nav-link" data-content="Odabir File opcije iz menija">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Odabir File opcije iz menija</span>
+                </a>
+                <span class="tooltip">Odabir File opcije iz menija</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Kreiranje novog projekta">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Kreiranje novog projekta</span>
+                </a>
+                <span class="tooltip">Kreiranje novog projekta</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Otvaranje postojećeg projekta">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Otvaranje postojeceg projekta</span>
+                </a>
+                <span class="tooltip">Otvaranje postojeceg projekta</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Čuvanje projekta lokalno">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Čuvanje projekta lokalno</span>
+                </a>
+                <span class="tooltip">Čuvanje projekta lokalno</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Čuvanje projekta">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Čuvanje projekta</span>
+                </a>
+                <span class="tooltip">Čuvanje projekta</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Eksportovanje sa grananjem (Export with branching)">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Eksportovanje sa grananjem (Export with branching)</span>
+                </a>
+                <span class="tooltip">Eksportovanje sa grananjem (Export with branching)</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Izmene informacija o projeku">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Izmene informacija o projeku</span>
+                </a>
+                <span class="tooltip">Izmene informacija o projeku</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Unos postojećih DITA fajlova">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Unos postojećih DITA fajlova</span>
+                </a>
+                <span class="tooltip">Unos postojećih DITA fajlova</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Unos jednog DITA objekta">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Unos jednog DITA objekta</span>
+                </a>
+                <span class="tooltip">Unos jednog DITA objekta</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Preview HTML">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Preview HTML</span>
+                </a>
+                <span class="tooltip">Preview HTML</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Update version">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item sakriveno">Update version</span>
+                </a>
+                <span class="tooltip">Update version</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Merge projects">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Merge projects</span>
+                </a>
+                <span class="tooltip">Merge projects</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Unos Microsoft Word i PDF dokumenta i statistika lekcije">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Unos Microsoft Word i PDF dokumenta i statistika lekcije</span>
+                </a>
+                <span class="tooltip">Unos Microsoft Word i PDF dokumenta i statistika lekcije</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Osnovne funkcije mDita editora">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Osnovne funkcije mDita editora</span>
+                </a>
+                <span class="tooltip">Osnovne funkcije mDita editora</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje liste (bullet liste i numerisane liste)">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje liste (bullet liste i numerisane liste)</span>
+                </a>
+                <span class="tooltip">Dodavanje liste (bullet liste i numerisane liste)</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Proveravanje ispravnosti linkova">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Proveravanje ispravnosti linkova</span>
+                </a>
+                <span class="tooltip">Proveravanje ispravnosti linkova</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Otvaranje prethodno otvorenih lekcija">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Otvaranje prethodno otvorenih lekcija</span>
+                </a>
+                <span class="tooltip">Otvaranje prethodno otvorenih lekcija</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Upotreba spellcheck funkcije">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Upotreba spellcheck funkcije</span>
+                </a>
+                <span class="tooltip">Upotreba spellcheck funkcije</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Mdita meni">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Mdita meni</span>
+                </a>
+                <span class="tooltip">Mdita meni</span>  
+            </li>
+            <li>
+                <a href="#" id="dodatne-aktivnosti" class="nav-link" data-content="Dodatne aktivnosti (Aditional Activities)">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodatne aktivnosti (Aditional Activities)</span>
+                </a>
+                <span class="tooltip">Dodatne aktivnosti (Aditional Activities)</span>  
+            </li>
+            <ul class="extra-links2" id="additional-links2">
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje aktivnosti 'Q&A'">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti 'Q&A'</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti 'Q&A'</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje aktivnosti 'Forum'">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti 'Forum'</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti 'Forum'</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje aktivnosti 'Multiple Choice'">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti 'Multiple Choice'</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti 'Multiple Choice'</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje aktivnosti 'Submit files'">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti 'Submit files'</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti 'Submit files'</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje aktivnosti 'Shere recources'">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti 'Shere recources'</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti 'Shere recources'</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje aktivnosti 'Assessment'">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti 'Assessment'</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti 'Assessment'</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje aktivnosti 'Chat'">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti 'Chat'</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti 'Chat'</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje aktivnosti 'Nootbook'">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti 'Nootbook'</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti 'Nootbook'</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Minimalna specifikacija racunara">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti "Noticeboard"</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti "Noticeboard"</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodavanje aktivnosti 'Image Gallery'">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodavanje aktivnosti 'Image Gallery'</span>
+                </a>
+                <span class="tooltip">Dodavanje aktivnosti 'Image Gallery'</span>  
+            </li>
+            </ul>
+            <li>
+                <a href="#" class="nav-link" data-content="LAMS Designer">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">LAMS Designer</span>
+                </a>
+                <span class="tooltip">LAMS Designer</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Dodatne napomene">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dodatne napomene</span>
+                </a>
+                <span class="tooltip">Dodatne napomene</span>  
+            </li>
+            <li>
+                <a href="#" class="nav-link" data-content="Separator (OU) slajd">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Separator (OU) slajd</span>
+                </a>
+                <span class="tooltip">Separator (OU) slajd</span>  
+            </li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1 id="main-heading">Minimalna specifikacija računara</h1>
+            <div id="content"> <!-- This div will hold dynamic content -->
+                <p>Za instalaciju i korišćenje mDita Editora minimalna potrebna specifikacija računara je:</p>
+                <ul>    
+                    <li>CPU: Intel® Core™2 Duo Processor E4300 (2M Cache, 1.80 GHz, 800 MHz FSB)</li>
+                    <li>RAM: 4 gigabyte (GB) RAM</li>
+                    <li>Minimalna rezolucija ekrana: 1280x768</li>
+                    <li>Operativni sistem: Windows 10 operativni sistem ili noviji.</li>
+                    <li>Net Framework 4.5</li>
+                    <li><u style='color:red;'><b style='color:red;'> Obavezna internet konekcija</b></u></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script src="./script.js" defer></script>
+</body>
+</html>
+
