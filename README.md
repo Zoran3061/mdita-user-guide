@@ -22,6 +22,7 @@ built with pure frontend technologies.
 ## Project Structure
 -index.html
 -style.css
+-script.js
 -Slike/
 -images used inside the guide
 -Screenshots/
