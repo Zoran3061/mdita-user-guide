@@ -35,9 +35,9 @@ No build tools or dependencies are required.
 Simply open the `index.html` file in your web browser.
 
 ## Screenshots
+
 **Installation guide**
 <img width="1907" height="912" alt="image" src="https://github.com/user-attachments/assets/21055cdc-8e17-4877-a1c1-7f78993a370b" />
-
 
 **Editor features overview**
 <img width="1907" height="915" alt="image" src="https://github.com/user-attachments/assets/3a615dfb-aad0-4c5f-97e4-c0c43b3fb7f0" />
